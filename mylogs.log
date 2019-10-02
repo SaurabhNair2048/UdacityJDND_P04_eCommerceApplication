@@ -1,0 +1,204 @@
+2019-10-02 21:04:24.461  INFO 31324 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on LAPTOP-HTG23AB3 with PID 31324 (started by SAURABH in F:\Java\Udacity Nano\Ch5\project\JDND-master\projects\P04-eCommerce Application\starter_code)
+2019-10-02 21:04:24.476  INFO 31324 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2019-10-02 21:04:26.210  INFO 31324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-02 21:04:26.428  INFO 31324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196ms. Found 4 repository interfaces.
+2019-10-02 21:04:27.652  INFO 31324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c836fccb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-02 21:04:28.354  INFO 31324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-02 21:04:29.216  INFO 31324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-02 21:04:29.414  INFO 31324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-02 21:04:29.523  INFO 31324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-10-02 21:04:29.528  INFO 31324 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-02 21:04:29.656  INFO 31324 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-02 21:04:30.133  INFO 31324 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-02 21:04:31.432  INFO 31324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:04:32.830  INFO 31324 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6df37f7a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4489f60f, org.springframework.security.web.header.HeaderWriterFilter@698ac187, org.springframework.web.filter.CorsFilter@39514976, org.springframework.security.web.authentication.logout.LogoutFilter@23df7fad, com.example.demo.security.JWTAuthenticationFilter@7bdb4f17, com.example.demo.security.JWTAuthenticationVerificationFilter@77856cc5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fd9dbe6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d5574c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fbd5e0, org.springframework.security.web.session.SessionManagementFilter@65f5cae3, org.springframework.security.web.access.ExceptionTranslationFilter@716ae973, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59f76e56]
+2019-10-02 21:04:34.336  INFO 31324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:04:34.435  WARN 31324 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-02 21:04:35.217  INFO 31324 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 11.435 seconds (JVM running for 16.763)
+2019-10-02 21:04:35.351  INFO 31324 --- [main] c.e.demo.controllers.CartController      : Cannot add to the cart a non existing item having id : 0
+2019-10-02 21:04:35.352  INFO 31324 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart of a non existing user : test
+2019-10-02 21:04:35.353  INFO 31324 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully added to the cart of user : test
+2019-10-02 21:04:35.356  INFO 31324 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully removed from the cart of user : test
+2019-10-02 21:04:35.357  INFO 31324 --- [main] c.e.demo.controllers.CartController      : Cannot add to cart of a non existing user : test
+2019-10-02 21:04:35.359  INFO 31324 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart a non existing item having id : 0
+2019-10-02 21:04:35.360  INFO 31324 --- [main] c.e.demo.controllers.OrderController     : User test's orders history fetched successfully.
+2019-10-02 21:04:35.363  INFO 31324 --- [main] c.e.demo.controllers.OrderController     : Cannot fetch the history of orders by a non existing user : test
+2019-10-02 21:04:35.364  INFO 31324 --- [main] c.e.demo.controllers.OrderController     : Order submitted successfully by the user : test
+2019-10-02 21:04:35.364  INFO 31324 --- [main] c.e.demo.controllers.OrderController     : Cannot submit the order of a non existing user : test
+2019-10-02 21:04:35.366  INFO 31324 --- [main] c.e.demo.controllers.UserController      : Creation of user was successful. User has been created with user name : test
+2019-10-02 21:04:35.366 ERROR 31324 --- [main] c.e.demo.controllers.UserController      : Error with user password. Cannot create the user test2
+2019-10-02 21:04:36.028  INFO 31324 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:04:36.032  INFO 31324 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:04:36.035  INFO 31324 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-02 21:04:36.042  INFO 31324 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-02 21:04:52.184  INFO 20176 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on LAPTOP-HTG23AB3 with PID 20176 (started by SAURABH in F:\Java\Udacity Nano\Ch5\project\JDND-master\projects\P04-eCommerce Application\starter_code)
+2019-10-02 21:04:52.186  INFO 20176 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2019-10-02 21:04:53.550  INFO 20176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-02 21:04:53.778  INFO 20176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211ms. Found 4 repository interfaces.
+2019-10-02 21:04:55.016  INFO 20176 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee47edf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-02 21:04:55.494  INFO 20176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-02 21:04:55.712  INFO 20176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-02 21:04:55.842  INFO 20176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-02 21:04:55.955  INFO 20176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-10-02 21:04:55.963  INFO 20176 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-02 21:04:56.107  INFO 20176 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-02 21:04:56.567  INFO 20176 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-02 21:04:57.522  INFO 20176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:04:58.862  INFO 20176 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33a71d23, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d5574c7, org.springframework.security.web.header.HeaderWriterFilter@70022d44, org.springframework.web.filter.CorsFilter@23c05889, org.springframework.security.web.authentication.logout.LogoutFilter@39acd1f1, com.example.demo.security.JWTAuthenticationFilter@12166229, com.example.demo.security.JWTAuthenticationVerificationFilter@208e5b23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36871e98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aaf46e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bcb1414, org.springframework.security.web.session.SessionManagementFilter@5abbb273, org.springframework.security.web.access.ExceptionTranslationFilter@5f2b9da8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60844992]
+2019-10-02 21:05:00.795  INFO 20176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:05:00.968  WARN 20176 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-02 21:05:01.756  INFO 20176 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 10.103 seconds (JVM running for 12.439)
+2019-10-02 21:05:01.827  INFO 20176 --- [main] c.e.demo.controllers.CartController      : Cannot add to the cart a non existing item having id : 0
+2019-10-02 21:05:01.829  INFO 20176 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart of a non existing user : test
+2019-10-02 21:05:01.830  INFO 20176 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully added to the cart of user : test
+2019-10-02 21:05:01.832  INFO 20176 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully removed from the cart of user : test
+2019-10-02 21:05:01.834  INFO 20176 --- [main] c.e.demo.controllers.CartController      : Cannot add to cart of a non existing user : test
+2019-10-02 21:05:01.835  INFO 20176 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart a non existing item having id : 0
+2019-10-02 21:05:01.837  INFO 20176 --- [main] c.e.demo.controllers.OrderController     : User test's orders history fetched successfully.
+2019-10-02 21:05:01.839  INFO 20176 --- [main] c.e.demo.controllers.OrderController     : Cannot fetch the history of orders by a non existing user : test
+2019-10-02 21:05:01.841  INFO 20176 --- [main] c.e.demo.controllers.OrderController     : Order submitted successfully by the user : test
+2019-10-02 21:05:01.841  INFO 20176 --- [main] c.e.demo.controllers.OrderController     : Cannot submit the order of a non existing user : test
+2019-10-02 21:05:01.842  INFO 20176 --- [main] c.e.demo.controllers.UserController      : Creation of user was successful. User has been created with user name : test
+2019-10-02 21:05:01.843 ERROR 20176 --- [main] c.e.demo.controllers.UserController      : Error with user password. Cannot create the user test2
+2019-10-02 21:05:02.311  INFO 20176 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:05:02.319  INFO 20176 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:05:02.327  INFO 20176 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-02 21:05:02.336  INFO 20176 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-02 21:06:49.141  INFO 23444 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on LAPTOP-HTG23AB3 with PID 23444 (started by SAURABH in F:\Java\Udacity Nano\Ch5\project\JDND-master\projects\P04-eCommerce Application\starter_code)
+2019-10-02 21:06:49.146  INFO 23444 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2019-10-02 21:06:50.620  INFO 23444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-02 21:06:50.789  INFO 23444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148ms. Found 4 repository interfaces.
+2019-10-02 21:06:51.871  INFO 23444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a8e9807] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-02 21:06:52.382  INFO 23444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-02 21:06:52.599  INFO 23444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-02 21:06:52.729  INFO 23444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-02 21:06:52.841  INFO 23444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-10-02 21:06:52.845  INFO 23444 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-02 21:06:52.922  INFO 23444 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-02 21:06:53.378  INFO 23444 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-02 21:06:54.213  INFO 23444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:06:55.680  INFO 23444 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33a71d23, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d5574c7, org.springframework.security.web.header.HeaderWriterFilter@70022d44, org.springframework.web.filter.CorsFilter@23c05889, org.springframework.security.web.authentication.logout.LogoutFilter@39acd1f1, com.example.demo.security.JWTAuthenticationFilter@12166229, com.example.demo.security.JWTAuthenticationVerificationFilter@208e5b23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36871e98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aaf46e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bcb1414, org.springframework.security.web.session.SessionManagementFilter@5abbb273, org.springframework.security.web.access.ExceptionTranslationFilter@5f2b9da8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60844992]
+2019-10-02 21:06:57.229  INFO 23444 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:06:57.332  WARN 23444 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-02 21:06:57.867  INFO 23444 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 9.285 seconds (JVM running for 11.919)
+2019-10-02 21:06:57.938  INFO 23444 --- [main] c.e.demo.controllers.CartController      : Cannot add to the cart a non existing item having id : 0
+2019-10-02 21:06:57.940  INFO 23444 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart of a non existing user : test
+2019-10-02 21:06:57.941  INFO 23444 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully added to the cart of user : test
+2019-10-02 21:06:57.942  INFO 23444 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully removed from the cart of user : test
+2019-10-02 21:06:57.943  INFO 23444 --- [main] c.e.demo.controllers.CartController      : Cannot add to cart of a non existing user : test
+2019-10-02 21:06:57.943  INFO 23444 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart a non existing item having id : 0
+2019-10-02 21:06:57.944  INFO 23444 --- [main] c.e.demo.controllers.OrderController     : User test's orders history fetched successfully.
+2019-10-02 21:06:57.946  INFO 23444 --- [main] c.e.demo.controllers.OrderController     : Cannot fetch the history of orders by a non existing user : test
+2019-10-02 21:06:57.947  INFO 23444 --- [main] c.e.demo.controllers.OrderController     : Order submitted successfully by the user : test
+2019-10-02 21:06:57.948  INFO 23444 --- [main] c.e.demo.controllers.OrderController     : Cannot submit the order of a non existing user : test
+2019-10-02 21:06:57.950  INFO 23444 --- [main] c.e.demo.controllers.UserController      : Creation of user was successful. User has been created with user name : test
+2019-10-02 21:06:57.951 ERROR 23444 --- [main] c.e.demo.controllers.UserController      : Error with user password. Cannot create the user test2
+2019-10-02 21:06:58.316  INFO 23444 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:06:58.324  INFO 23444 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:06:58.329  INFO 23444 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-02 21:06:58.341  INFO 23444 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-02 21:09:25.996  INFO 29020 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on LAPTOP-HTG23AB3 with PID 29020 (started by SAURABH in F:\Java\Udacity Nano\Ch5\project\JDND-master\projects\P04-eCommerce Application\starter_code)
+2019-10-02 21:09:25.998  INFO 29020 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2019-10-02 21:09:27.522  INFO 29020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-02 21:09:27.687  INFO 29020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134ms. Found 4 repository interfaces.
+2019-10-02 21:09:28.789  INFO 29020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee47edf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-02 21:09:29.208  INFO 29020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-02 21:09:29.510  INFO 29020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-02 21:09:29.689  INFO 29020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-02 21:09:29.803  INFO 29020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-10-02 21:09:29.808  INFO 29020 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-02 21:09:29.901  INFO 29020 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-02 21:09:30.429  INFO 29020 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-02 21:09:31.483  INFO 29020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:09:32.768  INFO 29020 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23c05889, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a7a6d34, org.springframework.security.web.header.HeaderWriterFilter@7b1c501d, org.springframework.web.filter.CorsFilter@12166229, org.springframework.security.web.authentication.logout.LogoutFilter@51813065, com.example.demo.security.JWTAuthenticationFilter@208e5b23, com.example.demo.security.JWTAuthenticationVerificationFilter@2bcb1414, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70d687b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@391d28ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@aee05f4, org.springframework.security.web.session.SessionManagementFilter@25d9291a, org.springframework.security.web.access.ExceptionTranslationFilter@698ac187, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ee456c7]
+2019-10-02 21:09:34.549  INFO 29020 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:09:34.705  WARN 29020 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-02 21:09:35.598  INFO 29020 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 10.164 seconds (JVM running for 12.828)
+2019-10-02 21:09:35.644  INFO 29020 --- [main] c.e.demo.controllers.CartController      : Cannot add to the cart a non existing item having id : 0
+2019-10-02 21:09:35.645  INFO 29020 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart of a non existing user : test
+2019-10-02 21:09:35.646  INFO 29020 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully added to the cart of user : test
+2019-10-02 21:09:35.647  INFO 29020 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully removed from the cart of user : test
+2019-10-02 21:09:35.648  INFO 29020 --- [main] c.e.demo.controllers.CartController      : Cannot add to cart of a non existing user : test
+2019-10-02 21:09:35.650  INFO 29020 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart a non existing item having id : 0
+2019-10-02 21:09:35.655  INFO 29020 --- [main] c.e.demo.controllers.OrderController     : User test's orders history fetched successfully.
+2019-10-02 21:09:35.656  INFO 29020 --- [main] c.e.demo.controllers.OrderController     : Cannot fetch the history of orders by a non existing user : test
+2019-10-02 21:09:35.658  INFO 29020 --- [main] c.e.demo.controllers.OrderController     : Order submitted successfully by the user : test
+2019-10-02 21:09:35.659  INFO 29020 --- [main] c.e.demo.controllers.OrderController     : Cannot submit the order of a non existing user : test
+2019-10-02 21:09:35.662  INFO 29020 --- [main] c.e.demo.controllers.UserController      : Creation of user was successful. User has been created with user name : test
+2019-10-02 21:09:35.662 ERROR 29020 --- [main] c.e.demo.controllers.UserController      : Error with user password. Cannot create the user test2
+2019-10-02 21:09:36.389  INFO 29020 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:09:36.391  INFO 29020 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:09:36.405  INFO 29020 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-02 21:09:36.410  INFO 29020 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-02 21:09:48.585  INFO 16764 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on LAPTOP-HTG23AB3 with PID 16764 (started by SAURABH in F:\Java\Udacity Nano\Ch5\project\JDND-master\projects\P04-eCommerce Application\starter_code)
+2019-10-02 21:09:48.587  INFO 16764 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2019-10-02 21:09:49.965  INFO 16764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-02 21:09:50.131  INFO 16764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148ms. Found 4 repository interfaces.
+2019-10-02 21:09:51.322  INFO 16764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee47edf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-02 21:09:51.758  INFO 16764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-02 21:09:52.023  INFO 16764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-02 21:09:52.163  INFO 16764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-02 21:09:52.299  INFO 16764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-10-02 21:09:52.304  INFO 16764 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-02 21:09:52.471  INFO 16764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-02 21:09:52.947  INFO 16764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-02 21:09:53.770  INFO 16764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:09:55.136  INFO 16764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23c05889, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a7a6d34, org.springframework.security.web.header.HeaderWriterFilter@7b1c501d, org.springframework.web.filter.CorsFilter@12166229, org.springframework.security.web.authentication.logout.LogoutFilter@51813065, com.example.demo.security.JWTAuthenticationFilter@208e5b23, com.example.demo.security.JWTAuthenticationVerificationFilter@2bcb1414, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70d687b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@391d28ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@aee05f4, org.springframework.security.web.session.SessionManagementFilter@25d9291a, org.springframework.security.web.access.ExceptionTranslationFilter@698ac187, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ee456c7]
+2019-10-02 21:09:56.779  INFO 16764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:09:56.885  WARN 16764 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-02 21:09:57.600  INFO 16764 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 9.568 seconds (JVM running for 12.031)
+2019-10-02 21:09:57.667  INFO 16764 --- [main] c.e.demo.controllers.CartController      : Cannot add to the cart a non existing item having id : 0
+2019-10-02 21:09:57.668  INFO 16764 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart of a non existing user : test
+2019-10-02 21:09:57.670  INFO 16764 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully added to the cart of user : test
+2019-10-02 21:09:57.672  INFO 16764 --- [main] c.e.demo.controllers.CartController      : Item with id 0, successfully removed from the cart of user : test
+2019-10-02 21:09:57.674  INFO 16764 --- [main] c.e.demo.controllers.CartController      : Cannot add to cart of a non existing user : test
+2019-10-02 21:09:57.675  INFO 16764 --- [main] c.e.demo.controllers.CartController      : Cannot remove from the cart a non existing item having id : 0
+2019-10-02 21:09:57.678  INFO 16764 --- [main] c.e.demo.controllers.OrderController     : User test's orders history fetched successfully.
+2019-10-02 21:09:57.679  INFO 16764 --- [main] c.e.demo.controllers.OrderController     : Cannot fetch the history of orders by a non existing user : test
+2019-10-02 21:09:57.680  INFO 16764 --- [main] c.e.demo.controllers.OrderController     : Order submitted successfully by the user : test
+2019-10-02 21:09:57.681  INFO 16764 --- [main] c.e.demo.controllers.OrderController     : Cannot submit the order of a non existing user : test
+2019-10-02 21:09:57.682  INFO 16764 --- [main] c.e.demo.controllers.UserController      : Creation of user was successful. User has been created with user name : test
+2019-10-02 21:09:57.683 ERROR 16764 --- [main] c.e.demo.controllers.UserController      : Error with user password. Cannot create the user test2
+2019-10-02 21:09:57.947  INFO 16764 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:09:57.950  INFO 16764 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:09:57.955  INFO 16764 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-02 21:09:57.960  INFO 16764 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-02 21:10:28.521  INFO 26456 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication v0.0.1-SNAPSHOT on LAPTOP-HTG23AB3 with PID 26456 (F:\Java\Udacity Nano\Ch5\project\JDND-master\projects\P04-eCommerce Application\starter_code\target\auth-course-0.0.1-SNAPSHOT.jar started by SAURABH in F:\Java\Udacity Nano\Ch5\project\JDND-master\projects\P04-eCommerce Application\starter_code)
+2019-10-02 21:10:28.529  INFO 26456 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2019-10-02 21:10:30.095  INFO 26456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-02 21:10:30.233  INFO 26456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116ms. Found 4 repository interfaces.
+2019-10-02 21:10:31.212  INFO 26456 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$364e9ebc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-02 21:10:31.973  INFO 26456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-02 21:10:32.046  INFO 26456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-02 21:10:32.052  INFO 26456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-10-02 21:10:32.256  INFO 26456 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-02 21:10:32.258  INFO 26456 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3611 ms
+2019-10-02 21:10:32.678  INFO 26456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-02 21:10:32.967  INFO 26456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-02 21:10:33.059  INFO 26456 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-02 21:10:33.189  INFO 26456 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-10-02 21:10:33.196  INFO 26456 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-02 21:10:33.449  INFO 26456 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-02 21:10:33.747  INFO 26456 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-02 21:10:34.827  INFO 26456 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:10:36.559  INFO 26456 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@740d2e78, org.springframework.security.web.context.SecurityContextPersistenceFilter@8c3619e, org.springframework.security.web.header.HeaderWriterFilter@13330ac6, org.springframework.web.filter.CorsFilter@1c481ff2, org.springframework.security.web.authentication.logout.LogoutFilter@b2c5e07, com.example.demo.security.JWTAuthenticationFilter@72437d8d, com.example.demo.security.JWTAuthenticationVerificationFilter@1b955cac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f63b475, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bf8fa12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@676cf48, org.springframework.security.web.session.SessionManagementFilter@39a2bb97, org.springframework.security.web.access.ExceptionTranslationFilter@1b84f475, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e4204e2]
+2019-10-02 21:10:37.472  INFO 26456 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:10:37.597  WARN 26456 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-02 21:10:38.097  INFO 26456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-02 21:10:38.185  INFO 26456 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 10.423 seconds (JVM running for 11.158)
+2019-10-02 21:10:44.814  INFO 26456 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-02 21:10:44.824  INFO 26456 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-02 21:10:44.836  INFO 26456 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-02 21:10:44.846  INFO 26456 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
